@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+}
+
+img {
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+h2, h3 {
+    margin-top: 20px;
+}
