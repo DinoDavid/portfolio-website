@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         categorySection.appendChild(title);
 
         // Legger til bilder for hver kategori
-        for (let i = 1; i <= 6; i++) {
+        for (let i = 1; i <= 3; i++) {
             const img = document.createElement("img");
             img.src = `images/${category}/image${i}.jpg`; // Setter bildestien
             img.alt = `${category} ${i}`;
