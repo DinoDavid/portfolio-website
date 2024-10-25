@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Legger til bilder for hver kategori
         for (let i = 1; i <= 3; i++) {
             const img = document.createElement("img");
-            img.src = `images/${category}/image${i}.jpg`; // Setter bildestien
+            img.src = `images/${category}/image${i}.JPG`; // Setter bildestien
             img.alt = `${category} ${i}`;
             img.classList.add("portfolio-image");
 
