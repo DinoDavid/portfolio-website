@@ -114,3 +114,90 @@ header p {
         width: 100%;
     }
 }
+
+/* Slideshow container styling */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Begrens bredde for bedre visning på større skjermer */
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Slide container styling */
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Legg til overgang for smidig skifting */
+    width: 100%; /* Gi bredden 100% av slideshow-container */
+}
+
+/* Slide image styling */
+.slide {
+    min-width: 100%; /* Hver slide tar opp 100% av containerens bredde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: auto; /* Beholder den naturlige bredden */
+    height: auto; /* Beholder den naturlige høyden */
+    max-width: 100%; /* Sørger for at bildene ikke strekker seg utover container */
+    max-height: 100%; /* Sørger for at bildene holder proporsjoner */
+    border-radius: 10px; /* Avrunder kantene på hvert bilde */
+    transition: transform 0.3s ease; /* Smooth overgang for zoom-effekt */
+}
+
+/* Zoom-in effekt ved hover */
+.slide img:hover {
+    transform: scale(1.05);
+}
+
+/* Dot styling */
+.dot-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 768px) {
+    .slideshow-container {
+        max-width: 100%; /* Tilpasser bredde på mobile enheter */
+    }
+}
+
+.instagram-link {
+    text-align: center; /* Sentrerer ikonet */
+    margin-top: 20px; /* Liten margin over ikonet */
+}
+
+.instagram-link a {
+    color: #E1306C; /* Instagram-farge */
+    text-decoration: none; /* Fjerner understrekning */
+}
+
+.instagram-link i {
+    transition: transform 0.3s ease; /* Smooth overgang for hover-effekt */
+}
+
+/* Hover-effekt for ikonet */
+.instagram-link i:hover {
+    transform: scale(1.1); /* Forstørrer ikonet litt ved hover */
+}
